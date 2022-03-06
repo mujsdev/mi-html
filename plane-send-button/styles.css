@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* sets the base font size to 10px for rems to be easily calculated */
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+}
+
+.container {
+  height: 100vh;
+  background-color: #fad161;
+  /* background-color: #27272b; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  position: relative;
+
+  padding: 0 2rem;
+  height: 5.6rem;
+  width: 24rem;
+  border: 0;
+  border-radius: 99rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #f8f8f8;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: #27272b;
+  box-shadow: 0 1rem 2.5rem -1rem rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button[disabled] {
+  cursor: not-allowed;
+}
+
+button .material-icons-round {
+  margin-right: 1rem;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+@keyframes buttonSendTextAnimation {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(-12px, 0);
+  }
+  30% {
+    opacity: 1;
+    transform: translate(-12px, 0);
+  }
+  40% {
+    opacity: 0;
+    transform: translate(-12px, 100%);
+  }
+  48% {
+    opacity: 0;
+    transform: translate(-100%, 100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-360px, -160px);
+  }
+  51% {
+    opacity: 1;
+    transform: translate(0, -100%);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes buttonIconAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  12% {
+    transform: translate(-100px, 0) scale(0.8, 0.8);
+  }
+  35% {
+    transform: translate(-100px, 0) scale(0.8, 0.8);
+  }
+  50% {
+    transform: translate(250px, 0) scale(1.75, 1.75);
+  }
+  60% {
+    transform: translate(250px, -80px) scale(1.75, 1.75);
+  }
+  61% {
+    transform: translate(0, -60px) scale(1, 1);
+  }
+  65% {
+    transform: translate(0, 0) scale(1, 1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1, 1);
+  }
+}
