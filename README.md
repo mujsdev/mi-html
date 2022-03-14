@@ -5,7 +5,7 @@ A micro-interactions repo open for anyone to use in their projects. Built with p
 ### Plane send button
 https://user-images.githubusercontent.com/32551220/157372645-fa1f8a06-a3b7-46be-83af-6b509b0284cb.mov
 
-### Animated Hamburger icon (coming soon)
+### Animated Hamburger icon
 https://user-images.githubusercontent.com/32551220/158219644-8bc3c6c0-7445-4300-bcac-805fdbf664ac.mov
 
 ## Contributors
