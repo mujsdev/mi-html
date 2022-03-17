@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* sets the base font size to 10px for rems to be easily calculated */
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  height: 100vh;
+  background-color: #27272b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  position: relative;
+
+  padding: 0 2rem;
+  height: 5.6rem;
+  width: 22rem;
+  border: 0;
+  border-radius: 99rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #f8f8f8;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: #27272b;
+  box-shadow: 0 1rem 2.5rem -1rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button .ripple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: rgba(248, 69, 159, 0.2);
+
+  opacity: 0;
+  pointer-events: none;
+  transform-origin: 0% 0%;
+
+  animation-timing-function: infinite;
+  animation: rippleAnimation 1.25s;
+}
+
+@keyframes rippleAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translate(-50%, -50%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2) translate(-50%, -50%);
+  }
+}
