@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+.inner::after, .inner::before, input[type=radio] {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background: #272936;
+  font-family: "HelveticaNeue-Light", sans-serif;
+  font-weight: 600;
+  font-size: 1em;  
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  text-align: center;
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.input-wrapper {
+  display: block;
+  margin-left: 20px;
+  text-align: left;
+}
+
+input[type=radio] {
+  display: block;
+}
+
+.outer {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #87745C;
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  margin: 25px 20px 0 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 0;
+}
+
+.inner {
+  position: relative;
+  font-family: FontAwesome;
+}
+
+.inner::before {
+  content: "";
+  top: 50%;
+  left: 7px;
+  color: #4B6279;
+  transform: scale(0) translateY(-50%);
+}
+
+.inner::after {
+  content: "";
+  left: -140px;
+  bottom: -180px;
+  font-size: 2em;
+  transform: scale(3);
+  color: #4B6279;
+}
+
+.inner::before:hover {
+  opacity: 1;
+}
+
+.input-name {
+  position: relative;
+  top: -27px;
+  left: 80px;
+  color: #87745C;
+}
+
+@keyframes boom {
+  0% {
+    box-shadow: 0px 0px 0px 15px rgba(100, 100, 100, 0.25); 
+  } 
+
+  100% {
+      box-shadow: 0px 0px 0px 15px rgba(100, 100, 100, 0);
+  }
+}
+
+/* Radio Button Animation */
+input[type=radio]:hover + label .inner::before {
+  opacity: 0.2;
+  display: inline-block;
+  position: absolute;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+input[type=radio]:checked label .inner::before {
+  opacity: 1;
+  transform: scale(1.5);
+  transition: all 0.2s ease;
+}
+
+input[type=radio]:focus + label .inner::before {
+  opacity: 1;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+  -webkit-transition-delay: 0.75s;
+}
+
+input[type=radio]:focus + label .outer {
+  transform: translate(0.09em, 0.09em);
+  box-shadow: 0px 0px 0px 0px rgba(200, 200, 200, 0.1);
+  border: 3px solid #4B6279;
+  -webkit-transition-delay: 0.75s;
+  -webkit-animation: boom 1s ease-out;
+  -webkit-animation-delay: 0.75s;
+}
+
+/* Text Animation */
+input[type=radio]:focus + label .input-name .text__effect {
+  transition: all 0.2s ease-out;
+  -webkit-transition-delay: 0.75s;
+  color: #4B6279;
+}
+
+input[type=radio] + label .input-name .text__effect {
+  cursor: pointer;
+}
+
+input[type=radio]:focus + label .inner::after {
+  opacity: 1;
+  -webkit-transform: translate(140px, -150px) scale(0.01);
+  transition: all 1s ease;
+}
