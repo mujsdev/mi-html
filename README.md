@@ -14,6 +14,9 @@ https://user-images.githubusercontent.com/32551220/158879127-45e17c9d-6166-45dc-
 ### Radio input
 https://user-images.githubusercontent.com/32551220/159953726-7d42f612-961f-4112-9644-fda85e17c8a9.mov
 
+### Like dislike button
+https://user-images.githubusercontent.com/32551220/160289777-a51ffbf1-5039-4bdc-a508-d7fc853aca67.mov
+
 ## Contributors
 [@mujs.dev](https://www.instagram.com/mujs.dev/)
 <br/>
