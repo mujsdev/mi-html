@@ -17,6 +17,9 @@ https://user-images.githubusercontent.com/32551220/159953726-7d42f612-961f-4112-
 ### Like dislike button
 https://user-images.githubusercontent.com/32551220/160289777-a51ffbf1-5039-4bdc-a508-d7fc853aca67.mov
 
+### Custom cursor
+https://user-images.githubusercontent.com/32551220/161388700-b3e0d2a7-6f11-479b-a29b-f24214ce7fef.mov
+
 ## Contributors
 [@mujs.dev](https://www.instagram.com/mujs.dev/)
 <br/>
