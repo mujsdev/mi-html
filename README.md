@@ -20,6 +20,9 @@ https://user-images.githubusercontent.com/32551220/160289777-a51ffbf1-5039-4bdc-
 ### Custom cursor
 https://user-images.githubusercontent.com/32551220/161388700-b3e0d2a7-6f11-479b-a29b-f24214ce7fef.mov
 
+### Modern sliding push menu
+https://user-images.githubusercontent.com/32551220/162974291-0d3887a8-54bf-4b7c-b398-ec19221f31c8.mov
+
 ## Contributors
 [@mujs.dev](https://www.instagram.com/mujs.dev/)
 <br/>
